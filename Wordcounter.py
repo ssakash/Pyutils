@@ -1,4 +1,6 @@
-f   = open("words.txt")
+import easygui
+
+f = open(easygui.fileopenbox())
 content =  f.read()
 s_content = content.split()
 word  = ""
